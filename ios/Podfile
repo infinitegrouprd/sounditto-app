@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
-target 'Canvas' do
+target 'SoundittoApp' do
  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
  # use_frameworks!
 
- # Pods for Canvas
+ # Pods for SoundittoApp
 
  pod 'React', :path => '../node_modules/react-native', :subspecs => [
    'Core',
@@ -22,18 +22,7 @@ target 'Canvas' do
  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
- pod 'FacebookSDK', '~> 4.38.0'
- pod 'FBSDKShareKit', '~> 4.38.0'
- pod 'FBSDKCoreKit', '~> 4.38.0'
- pod 'FBSDKLoginKit', '~> 4.38.0'
- pod 'GoogleSignIn', '~> 4.4.0'
-
- pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
- pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
- pod 'RNFS', :path => '../node_modules/react-native-fs'
- pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
- pod 'RNSound', :path => '../node_modules/react-native-sound'
 
  post_install do |installer|
   installer.pods_project.targets.each do |target|
@@ -43,20 +32,20 @@ target 'Canvas' do
   end
 end
 
- target 'CanvasTests' do
+ target 'SoundittoAppTests' do
    inherit! :search_paths
    # Pods for testing
  end
 
 end
 
-target 'Canvas-tvOS' do
+target 'SoundittoApp-tvOS' do
  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
  # use_frameworks!
 
- # Pods for Canvas-tvOS
+ # Pods for SoundittoApp-tvOS
 
- target 'Canvas-tvOSTests' do
+ target 'SoundittoApp-tvOSTests' do
    inherit! :search_paths
    # Pods for testing
  end

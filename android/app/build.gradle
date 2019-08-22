@@ -99,7 +99,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "com.mctekk.canvas"
+        applicationId "com.soundittoapp"
         minSdkVersion 21
         targetSdkVersion 28
         missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57_5"
@@ -160,16 +160,7 @@ configurations.all {
 }
 
 dependencies {
-    implementation project(':react-native-fs')
-    implementation project(':react-native-autogrow-textinput')
-    implementation project(':react-native-image-crop-picker')
-    compile project(':react-native-fs')
-    compile 'com.google.android.gms:play-services-auth:15.0.1'
-    implementation project(':react-native-google-signin')
-    implementation project(':react-native-fbsdk')
-    implementation project(':react-native-sound')
     implementation project(':react-native-sentry')
-    implementation project(':react-native-document-picker')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
@@ -177,8 +168,6 @@ dependencies {
     implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
 }
-
-apply plugin: 'com.google.gms.google-services'
 
 // Run this once to be able to run the application with BUCK
 // puts all compile dependencies into folder libs for BUCK to use

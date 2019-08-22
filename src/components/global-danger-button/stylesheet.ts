@@ -1,4 +1,4 @@
-import { titles, iosTypes } from "./../../styles/types";
+import { titles, iosTypes } from "../../styles/fonts";
 import { StyleSheet } from "react-native";
 import { colors } from "../../styles/colors";
 import { pmHelpers } from "../../styles/marginLayout";
