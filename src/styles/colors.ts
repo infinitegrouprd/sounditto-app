@@ -17,12 +17,12 @@ export const colors = {
   blackTrans: 'rgba(0, 0, 0, 0.3);',
   whiteDisable: 'rgba(255, 255, 255, 0.3)',
   // Brand Colors
-  brandPrimary: '#5EDFFF',
-  brandPrimaryLight: '#B2FCFF',
-  brandPrimaryDeep: '#3E64DD',
+  brandPrimary: '#0202a6',
+  brandPrimaryLight: '#9473ff',
+  brandPrimaryDeep: '#1f1730',
   brandPrimaryDisable: '',
-  brandSecondary: '#ECFCFF',
-  brandSecondaryLight: '',
+  brandSecondary: '#fb95ff',
+  brandSecondaryLight: '#f4f2fc',
   branSecondaryDeep: '',
   // Optional
   lightgray: '#B4B4B4',
