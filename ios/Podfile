@@ -25,6 +25,7 @@ target 'SoundittoApp' do
  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
 
  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+ pod 'ReactNativeAudioToolkit', :path => '../node_modules/@react-native-community/audio-toolkit'
 
  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
 

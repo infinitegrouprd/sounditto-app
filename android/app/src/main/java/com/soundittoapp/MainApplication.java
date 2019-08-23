@@ -3,6 +3,7 @@ package com.soundittoapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.rctaudiotoolkit.AudioPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import io.sentry.RNSentryPackage;
 import com.facebook.react.ReactNativeHost;
@@ -40,6 +41,7 @@ public class MainApplication extends NavigationApplication {
       // Add additional packages you require here
       // No need to add RnnPackage and MainReactPackage
       return Arrays.<ReactPackage>asList(
+        new AudioPackage(),
 
       );
   }
