@@ -22,12 +22,12 @@ target 'SoundittoApp' do
  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
- pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
 
+ pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
  pod 'ReactNativeAudioToolkit', :path => '../node_modules/@react-native-community/audio-toolkit'
-
  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+ pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
 
  post_install do |installer|
   installer.pods_project.targets.each do |target|

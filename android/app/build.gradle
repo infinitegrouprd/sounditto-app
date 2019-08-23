@@ -160,6 +160,9 @@ configurations.all {
 }
 
 dependencies {
+    implementation project(':react-native-firebase')
+    implementation "com.google.android.gms:play-services-base:16.1.0"
+    implementation "com.google.firebase:firebase-core:16.0.9"
     implementation project(':@react-native-community_audio-toolkit')
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-sentry')
@@ -177,3 +180,4 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+apply plugin: 'com.google.gms.google-services'
