@@ -26,7 +26,7 @@ import {
   Toast
 } from 'native-base';
 
-import { colors } from '../../config/styles';
+import { colors } from '@styles/colors';
 import { connect } from 'react-redux';
 const axios = require('../../../src/config/axios');
 

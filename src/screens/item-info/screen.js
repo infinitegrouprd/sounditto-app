@@ -26,7 +26,7 @@ import {
   Thumbnail
 } from 'native-base';
 
-import { colors } from '../../config/styles';
+import { colors } from '@styles/colors';
 import { connect } from 'react-redux';
 import moment from 'moment';
 

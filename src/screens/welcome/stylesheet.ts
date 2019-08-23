@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import {
   colors,
   paddingHelpers
-} from '../../config/styles';
+} from '@styles/colors';
 
 
 export default StyleSheet.create({

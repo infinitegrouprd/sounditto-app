@@ -1,9 +1,6 @@
 import { StyleSheet } from 'react-native';
-
-import {
-  colors,
-  paddingHelpers
-} from '../../config/styles';
+import { colors } from '@styles/colors';
+import { pmHelpers } from '@styles/marginLayout';
 
 
 export default StyleSheet.create({
@@ -25,6 +22,6 @@ export default StyleSheet.create({
   },
   listItem: {
     marginLeft: 0,
-    padding: paddingHelpers.S
+    padding: pmHelpers.S
   }
 });

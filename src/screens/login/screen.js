@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { appImages } from '../../config/imagesRoutes';
 import TitleBar from '../../components/title-bar';
 import { FORGOT_PASSWORD_URL, GOOGLE_CLIENT_ID } from 'react-native-dotenv';
-import { globalStyle, colors } from '../../config/styles';
+import { globalStyle, colors } from '@styles/colors';
 import { pushDashboard } from '../../config/flows'
 import StyleSheet from './stylesheet'
 import { LoginManager, GraphRequest,GraphRequestManager } from 'react-native-fbsdk';

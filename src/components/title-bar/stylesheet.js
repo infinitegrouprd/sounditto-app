@@ -1,6 +1,6 @@
 import { Platform} from 'react-native';
 import { StyleSheet } from 'react-native';
-import { colors } from '../../config/styles';
+import { colors } from '@styles/colors';
 const platform = Platform.OS;
 
 export default StyleSheet.create({

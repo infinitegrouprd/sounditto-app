@@ -20,7 +20,7 @@ import {
 import {
   globalStyle,
   colors
-} from '../../config/styles';
+} from '@styles/colors';
 
 import { changeActiveScreen } from '../../modules/Session';
 import { connect } from 'react-redux';

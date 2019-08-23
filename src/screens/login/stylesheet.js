@@ -2,7 +2,7 @@ import { StyleSheet, Platform } from 'react-native';
 import {
   colors,
   paddingHelpers
-} from '../../config/styles';
+} from '@styles/colors';
 const platform = Platform.OS;
 
 

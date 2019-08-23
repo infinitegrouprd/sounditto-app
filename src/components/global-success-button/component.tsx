@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./stylesheet";
 import { Button, Text } from "native-base";
 import _ from "lodash";
-import { titles } from "@styles/types";
+import { titles } from "@styles/fonts";
 import { colors } from "@styles/colors";
 
 interface Props {

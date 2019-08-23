@@ -1,6 +1,6 @@
 import { globalStyles } from "@styles/globalStyles";
 import { StyleSheet } from "react-native";
-import { colors, paddingHelpers } from "../../config/styles";
+import { colors, paddingHelpers } from "@styles/colors";
 export default StyleSheet.create({
   submitBtn: {
     marginTop: paddingHelpers.S,

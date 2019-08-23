@@ -23,7 +23,7 @@ import {
   Toast,
   Thumbnail
 } from "native-base";
-import { colors } from "../../config/styles";
+import { colors } from "@styles/colors";
 import TitleBar from "../../components/title-bar";
 import { changeActiveCompany } from "../../modules/Session";
 const platform = Platform.OS;

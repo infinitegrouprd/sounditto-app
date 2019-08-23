@@ -30,7 +30,7 @@ import {
   ActionSheet
 } from 'native-base';
 
-import { colors } from '../../config/styles';
+import { colors } from '@styles/colors';
 import { changeActiveCompany } from '../../modules/Session';
 import { connect } from 'react-redux';
 import { normalizeFile } from '../../utils/helpers';

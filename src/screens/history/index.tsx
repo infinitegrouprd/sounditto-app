@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
 import { Text, Container, Content, Card } from 'native-base'
-import { TitleBar } from '@components'
+import TitleBar from '@components/title-bar'
 import { colors } from '@styles/colors'
 import AudioCard, { IAudioCard } from './components/AudioCard'
 
@@ -17,32 +17,34 @@ const audios = [
 ]
 
 class History extends React.Component {
-  public static options = {
+  static options = {
     topBar: {
       visible: false,
     },
   }
-  public renderItem = (audio: IAudioCard) => {
+  renderItem = (audio: IAudioCard) => {
     return <AudioCard {...audio} />
   }
 
-  public keyExtractor = (audio: IAudioCard) => audio.id
-  public render() {
+  renderBody() {
+    return (
+      <Text
+        style={{
+          fontSize: 20,
+          color: colors.brandPrimaryDeep,
+          fontWeight: '600',
+        }}
+        >
+      History Audio
+    </Text>
+    )
+  }
+
+  keyExtractor = (audio: IAudioCard) => audio.id
+  render() {
     return (
       <Container>
-        <TitleBar
-          body={
-            <Text
-              style={{
-                fontSize: 20,
-                color: colors.brandPrimaryDeep,
-                fontWeight: '600',
-              }}
-            >
-              History Audio
-            </Text>
-          }
-        />
+        <TitleBar body={this.renderBody()} />
         <Content
           style={{ backgroundColor: colors.brandSecondary }}
           contentContainerStyle={{

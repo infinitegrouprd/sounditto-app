@@ -10,7 +10,7 @@ import { StatusBar } from 'react-native';
 import { View } from 'react-native';
 // Config Styles - Screens
 
-import { colors } from '../../config/styles';
+import { colors } from '@styles/colors';
 
 // Define Component for Header
 const TitleBar = props => {

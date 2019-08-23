@@ -11,7 +11,7 @@ import {
   Spinner,
   Text
 } from "native-base";
-import { colors, paddingHelpers } from "../../config/styles";
+import { colors, paddingHelpers } from "@styles/colors";
 import {
   changeActiveScreen,
   changeActiveFamily,

@@ -13,7 +13,7 @@ import {
   Toast,
   Root
 } from "native-base";
-import { colors } from "../../config/styles";
+import { colors } from "@styles/colors";
 import { changeActiveScreen } from "../../modules/Session";
 import { connect } from "react-redux";
 const platform = Platform.OS;

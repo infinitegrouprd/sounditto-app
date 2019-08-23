@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ScrollView, View, TouchableOpacity, AsyncStorage } from 'react-native';
 import { Body, Icon, Text, ListItem, List, Right } from 'native-base';
-import { paddingHelpers, colors } from '../../config/styles';
+import { paddingHelpers, colors } from '@styles/colors';
 import { changeActiveScreen } from '../../modules/Session';
 import { Navigation } from 'react-native-navigation';
 import { pushDashboard, auth, SingleScreenAppWithSideMenu } from '../../config/flows';
