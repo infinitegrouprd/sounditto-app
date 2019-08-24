@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  View,
-  Platform,
-  TouchableOpacity,
-  BackHandler
-} from 'react-native';
+import { View, Platform, TouchableOpacity, BackHandler } from 'react-native';
 
 import {
   Button,
@@ -18,16 +13,16 @@ import {
   Spinner,
   Root,
   Toast,
-  Thumbnail
+  Thumbnail,
 } from 'native-base';
 
-import { colors  } from '@styles/colors';
+import { colors } from '@styles/colors';
 import { changeActiveScreen } from '../../modules/Session';
 import { connect } from 'react-redux';
 const axios = require('../../../src/config/axios');
-import { API_KEY } from 'react-native-dotenv'
+import { API_KEY } from 'react-native-dotenv';
 
-import TitleBar from '../../components/title-bar'
+import TitleBar from '../../components/title-bar';
 
 const platform = Platform.OS;
 
@@ -43,7 +38,7 @@ class Profile extends Component {
     this.state = {
       userInfo: [],
       families: [],
-      isLoading: true
+      isLoading: true,
     };
   }
 
@@ -53,7 +48,7 @@ class Profile extends Component {
   }
 
   backAndroid() {
-    this.props.changeActiveScreen({ activeScreen: DASHBOARD});
+    this.props.changeActiveScreen({ activeScreen: DASHBOARD });
     return true;
   }
 
@@ -65,9 +60,9 @@ class Profile extends Component {
     Navigation.mergeOptions(SIDEMENU, {
       sideMenu: {
         left: {
-          visible: true
-        }
-      }
+          visible: true,
+        },
+      },
     });
   };
 
@@ -77,22 +72,20 @@ class Profile extends Component {
         name: EDIT_PROFILE,
         passProps: {
           userInfo: this.state.userInfo,
-          userFamilies: this.state.families
+          userFamilies: this.state.families,
         },
         options: {
           topBar: {
-            visible: false
-          }
-        }
-      }
+            visible: false,
+          },
+        },
+      },
     });
   }
 
   getFamilies = () => {
     axios
-      .get(
-        `/companies?q=(users_id:${this.props.user.id})`
-      )
+      .get(`/companies?q=(users_id:${this.props.user.id})`)
       .then(response => {
         this.setState({ families: response.data, isLoading: false }, () => {
           if (this.props.profileInfoChanged) {
@@ -100,13 +93,13 @@ class Profile extends Component {
               text: 'Profile successfully updated!',
               buttonText: 'Ok',
               duration: 3000,
-              type: 'success'
+              type: 'success',
             });
           }
         });
       })
       .catch(function(error) {
-        this.setState({ isLoading: false })
+        this.setState({ isLoading: false });
         console.log(error);
       });
   };
@@ -120,7 +113,7 @@ class Profile extends Component {
 
   getUserInfo() {
     const data = {
-      Authorization: this.props.token
+      Authorization: this.props.token,
     };
     axios
       .get(`/users/${this.props.user.id}`)
@@ -141,12 +134,7 @@ class Profile extends Component {
     return {
       content: (
         <View style={StyleSheet.titleBarContent}>
-          <Button
-            transparent
-            onPress={() =>
-              this.showDrawer()
-            }
-          >
+          <Button transparent onPress={() => this.showDrawer()}>
             <Icon
               type={'MaterialIcons'}
               name={'menu'}
@@ -154,7 +142,7 @@ class Profile extends Component {
             />
           </Button>
         </View>
-      )
+      ),
     };
   }
 
@@ -172,7 +160,7 @@ class Profile extends Component {
             </Text>
           </TouchableOpacity>
         </View>
-      )
+      ),
     };
   }
 
@@ -180,12 +168,12 @@ class Profile extends Component {
     this.props.navigator.push({
       screen: EDIT_PROFILE,
       passProps: {
-        cardCreationAction: this.getUserCards
+        cardCreationAction: this.getUserCards,
       },
       navigatorStyle: {
         navBarHidden: true,
-        tabBarHidden: true
-      }
+        tabBarHidden: true,
+      },
     });
   }
 
@@ -218,7 +206,7 @@ class Profile extends Component {
                   <Thumbnail
                     source={{
                       uri:
-                        'https://banner2.kisspng.com/20180406/sve/kisspng-computer-icons-user-material-design-business-login-dizzy-5ac7f1c61041c2.5160856515230529980666.jpg'
+                        'https://banner2.kisspng.com/20180406/sve/kisspng-computer-icons-user-material-design-business-login-dizzy-5ac7f1c61041c2.5160856515230529980666.jpg',
                     }}
                     style={{ width: 120, height: 120 }}
                     resizeMode="cover"
@@ -228,7 +216,7 @@ class Profile extends Component {
                   <Label
                     style={[
                       StyleSheet.formLabel,
-                      { fontSize: 12, color: colors.brandBlack }
+                      { fontSize: 12, color: colors.brandBlack },
                     ]}
                   >
                     Name
@@ -243,7 +231,7 @@ class Profile extends Component {
                   <Label
                     style={[
                       StyleSheet.formLabel,
-                      { fontSize: 12, color: colors.brandBlack }
+                      { fontSize: 12, color: colors.brandBlack },
                     ]}
                   >
                     Lastname
@@ -258,7 +246,7 @@ class Profile extends Component {
                   <Label
                     style={[
                       StyleSheet.formLabel,
-                      { fontSize: 12, color: colors.brandBlack }
+                      { fontSize: 12, color: colors.brandBlack },
                     ]}
                   >
                     Email
@@ -273,7 +261,7 @@ class Profile extends Component {
                   <Label
                     style={[
                       StyleSheet.formLabel,
-                      { fontSize: 12, color: colors.brandBlack }
+                      { fontSize: 12, color: colors.brandBlack },
                     ]}
                   >
                     Password
@@ -289,7 +277,7 @@ class Profile extends Component {
                   <Label
                     style={[
                       StyleSheet.formLabel,
-                      { fontSize: 12, color: colors.brandBlack }
+                      { fontSize: 12, color: colors.brandBlack },
                     ]}
                   >
                     Default Company
@@ -312,11 +300,17 @@ class Profile extends Component {
 const titleBarbody = {
   content: (
     <View style={StyleSheet.titleBarContent}>
-      <Text style={{ color: '#fff', paddingLeft: platform === 'ios' ? 0 : 10, fontSize: platform === 'ios' ? 18 : 19.64 }}>
+      <Text
+        style={{
+          color: '#fff',
+          paddingLeft: platform === 'ios' ? 0 : 10,
+          fontSize: platform === 'ios' ? 18 : 19.64,
+        }}
+      >
         My Profile
       </Text>
     </View>
-  )
+  ),
 };
 
 const mapStateToProps = state => {
@@ -324,10 +318,13 @@ const mapStateToProps = state => {
     token: state.session.token,
     user: state.session.user,
     selectedCompanyId: state.session.selectedCompanyId,
-    company: state.session.company
+    company: state.session.company,
   };
 };
 
-export default connect(mapStateToProps, {
-  changeActiveScreen
-})(Profile);
+export default connect(
+  mapStateToProps,
+  {
+    changeActiveScreen,
+  }
+)(Profile);
