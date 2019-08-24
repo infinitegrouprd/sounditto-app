@@ -1,5 +1,5 @@
 import { StyleSheet, Platform, Dimensions } from 'react-native';
-import { colors } from '@styles/colors';
+import { colors } from 'src/screens/Audio/History/node_modules/@styles/colors';
 
 // Responsive Const
 const deviceHeight = Dimensions.get('window').height;

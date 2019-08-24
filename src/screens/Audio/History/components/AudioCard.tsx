@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'src/screens/Audio/History/components/node_modules/react'
 import { Card, CardItem, Text } from 'native-base'
 import { Image, View } from 'react-native'
 

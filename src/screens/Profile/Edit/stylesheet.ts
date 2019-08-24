@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 import {
   colors
-} from '@styles/colors';
+} from 'src/screens/Audio/History/node_modules/@styles/colors';
 
 
 export default StyleSheet.create({

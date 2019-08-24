@@ -16,7 +16,7 @@ import {
   Thumbnail,
 } from 'native-base';
 
-import { colors } from '@styles/colors';
+import { colors } from 'src/screens/Audio/History/node_modules/@styles/colors';
 import { changeActiveScreen } from '../../modules/Session';
 import { connect } from 'react-redux';
 const axios = require('../../../src/config/axios');

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'src/screens/Audio/History/node_modules/react'
 import { View, FlatList } from 'react-native'
 import { Text, Container, Content, Card } from 'native-base'
-import TitleBar from '@components/title-bar'
-import { colors } from '@styles/colors'
+import TitleBar from 'src/screens/Audio/History/node_modules/@components/title-bar'
+import { colors } from 'src/screens/Audio/History/node_modules/@styles/colors'
 import AudioCard, { IAudioCard } from './components/AudioCard'
 
 const audios = [

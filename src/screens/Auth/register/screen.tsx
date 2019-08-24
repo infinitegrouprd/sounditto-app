@@ -6,7 +6,7 @@ import { Navigation } from 'react-native-navigation';
 import { View, AsyncStorage, Platform, TouchableOpacity, BackHandler, Keyboard} from 'react-native';
 import { Button, Title, Text, Content, Container, Form, Item, Input, Label, Spinner, Icon, Root, Toast } from 'native-base';
 // Importing local assets and components.
-import { globalStyle, colors } from '@styles/colors';
+import { globalStyle, colors } from 'src/screens/Audio/History/node_modules/@styles/colors';
 import { pushDashboard } from '../../config/flows';
 import TitleBar from '../../components/title-bar';
 import { API_KEY } from 'react-native-dotenv'

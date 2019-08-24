@@ -17,7 +17,7 @@ import {
 import { Text, Button, Container, Spinner } from "native-base";
 
 // Importing local assets.
-import { globalStyle, colors, paddingHelpers } from "@styles/colors";
+import { globalStyle, colors, paddingHelpers } from "src/screens/Audio/History/node_modules/@styles/colors";
 import { appImages } from "../../config/imagesRoutes";
 import { API_KEY } from "react-native-dotenv";
 
