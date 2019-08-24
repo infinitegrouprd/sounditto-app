@@ -5,6 +5,6 @@ import * as screens from './screenNames';
 
 export default function registerScreens(): void {
   Navigation.registerComponent(screens.LISTENING ,() => Listening)
-  Navigation.registerComponent(screens.LISTENING ,() => History)
+  Navigation.registerComponent(screens.HISTORY ,() => History)
 
 }

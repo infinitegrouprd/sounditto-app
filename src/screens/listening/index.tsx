@@ -1,34 +1,35 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import { Content, Container } from 'native-base'
-import ListeningButton from './components/ListeningButton'
-import ListeningText from './components/ListeningText'
-import { TitleBar } from '../../components'
+import { ListeningButton, ListeningText } from './components'
 import { colors } from '../../styles/colors'
+import TitleBar from '../../components/title-bar/index';
 
 class Listening extends Component {
-  public static options = {
+  static options = {
     topBar: {
       visible: false,
     },
   }
-
-  public render() {
+renderBody() {
+  return {
+    content: (
+      <Text
+      style={{
+        fontSize: 20,
+        color: colors.brandPrimaryDeep,
+        fontWeight: '700',
+      }}
+    >
+      Listening
+    </Text>
+    )
+  }
+}
+  render() {
     return (
       <Container>
-        <TitleBar
-          body={
-            <Text
-              style={{
-                fontSize: 20,
-                color: colors.brandPrimaryDeep,
-                fontWeight: '700',
-              }}
-            >
-              Listening
-            </Text>
-          }
-        />
+        <TitleBar body={this.renderBody()} />
         <Content
           style={{ backgroundColor: colors.brandSecondary }}
           contentContainerStyle={{

@@ -22,8 +22,9 @@ export const colors = {
   brandPrimaryDeep: '#1f1730',
   brandPrimaryDisable: '',
   brandSecondary: '#fb95ff',
-  brandSecondaryLight: '#f4f2fc',
-  branSecondaryDeep: '',
+  brandSecondaryLight: '#fac0fc',
+  branSecondaryDeep: '#f475f9',
+  background: '#f4f2fc',
   // Optional
   lightgray: '#B4B4B4',
   midGrey: '#7f7f7f',
