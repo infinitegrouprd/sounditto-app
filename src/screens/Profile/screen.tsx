@@ -17,19 +17,19 @@ import {
 } from 'native-base';
 
 import { colors } from 'src/screens/Profile/node_modules/src/screens/Audio/History/node_modules/@styles/colors';
-import { changeActiveScreen } from '../../../modules/Session';
+import { changeActiveScreen } from '../../modules/Session';
 import { connect } from 'src/screens/Profile/node_modules/react-redux';
 const axios = require('../../../src/config/axios');
 import { API_KEY } from 'src/screens/Profile/node_modules/react-native-dotenv';
 
-import TitleBar from '../../../components/title-bar';
+import TitleBar from '../../components/title-bar';
 
 const platform = Platform.OS;
 
 import { Navigation } from 'src/screens/Profile/node_modules/react-native-navigation';
 
-import StyleSheet from './stylesheet';
-import { DASHBOARD, SIDEMENU, EDIT_PROFILE } from '../..;
+import StyleSheet from './Details/stylesheet';
+import { DASHBOARD, SIDEMENU, EDIT_PROFILE } from '..';
 
 class Profile extends Component {
   constructor(props) {

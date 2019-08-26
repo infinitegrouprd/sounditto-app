@@ -5,15 +5,15 @@ import { Button, Title, Text, Content, Container, Form, Item, Input, Label, Spin
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
 import { appImages } from '../../config/imagesRoutes';
-import TitleBar from '../../components/title-bar';
+import TitleBar from '../../../components/title-bar';
 import { FORGOT_PASSWORD_URL, GOOGLE_CLIENT_ID } from 'react-native-dotenv';
 import { globalStyle, colors } from 'src/screens/Audio/History/node_modules/@styles/colors';
 import { pushDashboard } from '../../config/flows'
 import StyleSheet from './stylesheet'
 import { LoginManager, GraphRequest,GraphRequestManager } from 'react-native-fbsdk';
 import { GoogleSignin, statusCodes } from 'react-native-google-signin';
-import { changeActiveScreen, changeSessionToken, changeUser, changeActiveCompany } from '../../modules/Session';
-import { WELCOME, DASHBOARD, LOGIN } from '..';
+import { changeActiveScreen, changeSessionToken, changeUser, changeActiveCompany } from '../../../modules/Session';
+import { WELCOME, DASHBOARD, LOGIN } from '../..';
 import { pop } from '../../utils/nav';
 const axios = require('../../../src/config/axios');
 // Gets the operating system's name where the app is running (Android or iOS).

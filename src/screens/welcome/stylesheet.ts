@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import {
   colors,
   paddingHelpers
-} from 'src/screens/Audio/History/node_modules/@styles/colors';
+} from 'src/screens/Welcome/node_modules/src/screens/SideMenu/node_modules/src/screens/Audio/History/node_modules/@styles/colors';
 
 
 export default StyleSheet.create({

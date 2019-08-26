@@ -1,8 +1,8 @@
 // Importing package modules.
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from "src/screens/Welcome/node_modules/react";
+import { connect } from "src/screens/Welcome/node_modules/react-redux";
 const axios = require("../../../src/config/axios");
-import { Navigation } from "react-native-navigation";
+import { Navigation } from "src/screens/Welcome/node_modules/react-native-navigation";
 
 import { pushDashboard } from "../../config/flows";
 
@@ -17,9 +17,9 @@ import {
 import { Text, Button, Container, Spinner } from "native-base";
 
 // Importing local assets.
-import { globalStyle, colors, paddingHelpers } from "src/screens/Audio/History/node_modules/@styles/colors";
+import { globalStyle, colors, paddingHelpers } from "src/screens/Welcome/node_modules/src/screens/SideMenu/node_modules/src/screens/Audio/History/node_modules/@styles/colors";
 import { appImages } from "../../config/imagesRoutes";
-import { API_KEY } from "react-native-dotenv";
+import { API_KEY } from "src/screens/Welcome/node_modules/react-native-dotenv";
 
 // Importing Redux's actions
 import {

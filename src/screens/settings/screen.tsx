@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from 'src/screens/Settings/node_modules/react';
 import {
   View,
   Platform,
@@ -28,13 +28,13 @@ import {
 } from 'native-base';
 
 import { changeActiveScreen } from '../../modules/Session';
-import { connect } from 'react-redux';
+import { connect } from 'src/screens/Settings/node_modules/react-redux';
 const platform = Platform.OS;
 import TitleBar from '../../components/title-bar'
 
 import StyleSheet from './stylesheet';
 
-import { Navigation } from 'react-native-navigation';
+import { Navigation } from 'src/screens/Settings/node_modules/react-native-navigation';
 import { SIDEMENU } from '..';
 
 class Settings extends Component {

@@ -8,13 +8,13 @@ import { Button, Title, Text, Content, Container, Form, Item, Input, Label, Spin
 // Importing local assets and components.
 import { globalStyle, colors } from 'src/screens/Audio/History/node_modules/@styles/colors';
 import { pushDashboard } from '../../config/flows';
-import TitleBar from '../../components/title-bar';
+import TitleBar from '../../../components/title-bar';
 import { API_KEY } from 'react-native-dotenv'
-import { changeActiveScreen, changeSessionToken, changeUser, changeActiveCompany } from '../../modules/Session';
+import { changeActiveScreen, changeSessionToken, changeUser, changeActiveCompany } from '../../../modules/Session';
 const platform = Platform.OS;
 import StyleSheet from './stylesheet'
 import { pop } from '../../utils/nav';
-import { DASHBOARD } from '..';
+import { DASHBOARD } from '../..';
 /*
 	Screen Name: Register.
 	Description: This screen is used to let the user create an account.

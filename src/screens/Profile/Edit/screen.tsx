@@ -31,12 +31,12 @@ import {
 } from 'native-base';
 
 import { colors } from '@styles/colors';
-import { changeActiveCompany } from '../../modules/Session';
+import { changeActiveCompany } from '../../../modules/Session';
 import { connect } from 'react-redux';
-import { normalizeFile } from '../../utils/helpers';
+import { normalizeFile } from '../../../utils/helpers';
 const axios = require('../../../src/config/axios');
 
-import TitleBar from '../../components/title-bar'
+import TitleBar from '../../../components/title-bar'
 
 const platform = Platform.OS;
 
@@ -45,7 +45,7 @@ import StyleSheet from './stylesheet'
 import { Navigation } from 'react-native-navigation';
 
 import ImagePicker from 'react-native-image-crop-picker';
-import { PROFILE_INFO } from '..';
+import { PROFILE_INFO } from '../..';
 
 class EditProfile extends Component {
   constructor(props) {
